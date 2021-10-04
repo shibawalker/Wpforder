@@ -1,0 +1,28 @@
+﻿<Window x:Class="Wpforder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpforder"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="656">
+    <Grid HorizontalAlignment="Left" Width="695">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="77*"/>
+            <ColumnDefinition Width="473*"/>
+            <ColumnDefinition Width="134*"/>
+        </Grid.ColumnDefinitions>
+        <GroupBox x:Name="hereortogo" Header="內用/外帶" Margin="28,29,262,333" BorderBrush="#FF9BD9FF" Background="#FFBEE7FF" Grid.ColumnSpan="2">
+            <StackPanel Height="46" Margin="0,0,-172,0">
+                <RadioButton x:Name="rb1" Content="內用" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb2" Content="外帶" Checked="rb_Checked"/>
+            </StackPanel>
+        </GroupBox>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="244,46,0,0" VerticalAlignment="Top" Width="217" Grid.Column="1" Height="58"/>
+        <GroupBox x:Name="ordergroup" Header="飲料品項" Margin="10,107,262,81" Background="#FFD2F39A" Grid.ColumnSpan="2">
+            <StackPanel x:Name="drink_menu" Orientation="Vertical" Background="#FFEBFFD6" Margin="10,0,10,0" Height="212"/>
+        </GroupBox>
+        <TextBlock Grid.Column="1" Margin="226,125,108,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="240" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
