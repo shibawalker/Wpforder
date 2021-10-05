@@ -5,24 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpforder"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="656">
+        Title="5A8G0011" Height="450" Width="656">
     <Grid HorizontalAlignment="Left" Width="695">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="77*"/>
-            <ColumnDefinition Width="473*"/>
-            <ColumnDefinition Width="134*"/>
+            <ColumnDefinition Width="18*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="93*"/>
+            <ColumnDefinition Width="427*"/>
+            <ColumnDefinition Width="116*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="21*"/>
         </Grid.ColumnDefinitions>
-        <GroupBox x:Name="hereortogo" Header="內用/外帶" Margin="28,29,262,333" BorderBrush="#FF9BD9FF" Background="#FFBEE7FF" Grid.ColumnSpan="2">
+        <GroupBox x:Name="hereortogo" Header="內用/外帶" Margin="10,29,262,333" BorderBrush="#FF9BD9FF" Background="#FFBEE7FF" Grid.ColumnSpan="3" Grid.Column="1">
             <StackPanel Height="46" Margin="0,0,-172,0">
                 <RadioButton x:Name="rb1" Content="內用" Checked="rb_Checked"/>
                 <RadioButton x:Name="rb2" Content="外帶" Checked="rb_Checked"/>
             </StackPanel>
         </GroupBox>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="244,46,0,0" VerticalAlignment="Top" Width="217" Grid.Column="1" Height="58"/>
-        <GroupBox x:Name="ordergroup" Header="飲料品項" Margin="10,107,262,81" Background="#FFD2F39A" Grid.ColumnSpan="2">
+        <Button Content="確定訂購" HorizontalAlignment="Left" Margin="244,46,0,0" VerticalAlignment="Top" Width="217" Grid.Column="3" Height="58" Grid.ColumnSpan="2" Click="button1_click"/>
+        <GroupBox x:Name="ordergroup" Header="飲料品項" Margin="10,116,236,59" Background="#FFD2F39A" Grid.ColumnSpan="3" Grid.Column="1">
             <StackPanel x:Name="drink_menu" Orientation="Vertical" Background="#FFEBFFD6" Margin="10,0,10,0" Height="212"/>
         </GroupBox>
-        <TextBlock Grid.Column="1" Margin="226,125,108,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="240" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="Tb_order" Grid.Column="3" Margin="213,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="240" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="292" Background="#FFF5F2EA"/>
 
     </Grid>
 </Window>
