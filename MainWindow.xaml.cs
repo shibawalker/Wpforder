@@ -77,7 +77,7 @@ namespace Wpforder
         {
             RadioButton rb = sender as RadioButton;
             if (rb.IsChecked == true) takeout = rb.Content.ToString();
-            //MessageBox.Show(takeout);
+            MessageBox.Show(takeout);
         }
     }
 }
